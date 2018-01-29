@@ -8,6 +8,7 @@ from modules import *
 @route('/check')
 def title():
     # views/check.tplを呼ぶ
+    data = 0
     return template('check')
 
 
