@@ -4,9 +4,11 @@ import re
 import scrapy
 
 # 参考URL(Scrapy Tutorial)
-# https://doc.scrapy.org/en/latest/intro/tutorial.html
+# http://scrapy-ja.readthedocs.io/ja/latest/intro/overview.html
 
 # 使い方
-# scrapy file name
-# 例
-# scrapy crawl multiple
+#   コマンドライン出力
+#     scrapy file name
+#     例) scrapy crawl multiple
+#   ファイル出力
+#     scrapy file name -o filename.json
