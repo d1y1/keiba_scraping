@@ -16,11 +16,16 @@ def title():
 @route('/check_result', method='GET')
 def men():
     # GETパラメータの取得 =====================================
-    race_url = request.query.url
+    url = request.query.url
+    word = ''
+    word = request.query.word
 
     # Controller部 =======================================
-    data = scraping.crawling(race_url)
+    data = scraping.crawling(url)
     
+    if word:
+        data = data.find_all("div", text=re.compile(word))
+
     # View部 =============================================
     # views/check.tplを呼ぶ
     return template('check_result', data=data)

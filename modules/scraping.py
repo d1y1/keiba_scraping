@@ -17,7 +17,7 @@ def crawling(url):
     r = BeautifulSoup(r.content, 'lxml')
     return r
 
-
+# ちょっと汎用的に使えるように書き換えが必要。
 def get_text(class_name):
     '''
     クラス名を指定すること。
