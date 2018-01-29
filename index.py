@@ -13,7 +13,7 @@ def title():
 
 
 # localhost:8080/show
-@route('/check', method='GET')
+@route('/show', method='GET')
 def men():
     # GETパラメータの取得 =====================================
     race_url = request.query.url
@@ -23,7 +23,7 @@ def men():
     
     # View部 =============================================
     # views/check.tplを呼ぶ
-    return template('check', data=data)
+    return template('show', data=data)
 
 
 # ビルドインサーバの実行 ========================================

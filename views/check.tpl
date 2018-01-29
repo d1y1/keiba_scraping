@@ -12,12 +12,6 @@
     <input type="text" name="url"></p>
     <input type="submit" value="送信する">
     </form>
-
-    <h2>結果出力のページ</h2>
-    <p>{{data}}<p>
-    <a href="/">return to HOME</a>
-    </p>
-
   </body>
 
 </html>
