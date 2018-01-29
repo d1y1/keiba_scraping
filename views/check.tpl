@@ -9,7 +9,7 @@
     <h1>タイトルページ</h1>
     <h2>URL入力</h2>
     <form method="GET" action="/check_result">
-    <input type="text" name="url"></p>
+    <input type="text" name="url" placeholder="https://www.yahoo.co.jp"></p>
     <input type="submit" value="送信する">
     </form>
   </body>
