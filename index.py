@@ -27,7 +27,8 @@ def men():
         data = data.find_all(tag)
         if word:
             r = re.compile(word)
-            data = [x for x in data if r.mathch(x)]
+            data = list(data)
+            data = [x for x in data if r.match(x)]
 
     # View部 =============================================
     # views/check.tplを呼ぶ
