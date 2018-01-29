@@ -8,7 +8,7 @@
   <body>
     <h1>タイトルページ</h1>
     <h2>URL入力</h2>
-    <form method="GET" action="/check">
+    <form method="GET" action="/show">
     <input type="text" name="url"></p>
     <input type="submit" value="送信する">
     </form>
