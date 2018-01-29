@@ -23,8 +23,10 @@ def men():
     # Controller部 =======================================
     data = scraping.crawling(url)
     
-    if word and tag:
-        data = data.find_all(tag, text=re.compile(word))
+    if tag:
+        data = data.find_all(tag)
+        if word:
+            data = data.find_all(tag, text=re.compile(word))
 
     # View部 =============================================
     # views/check.tplを呼ぶ
