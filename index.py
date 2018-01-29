@@ -17,14 +17,14 @@ def title():
 def men():
     # GETパラメータの取得 =====================================
     url = request.query.url
-    word = ''
+    tag = request.query.tag
     word = request.query.word
 
     # Controller部 =======================================
     data = scraping.crawling(url)
     
-    if word:
-        data = data.find_all("div", text=re.compile(word))
+    if word and tag:
+        data = data.find_all(tag, text=re.compile(word))
 
     # View部 =============================================
     # views/check.tplを呼ぶ
