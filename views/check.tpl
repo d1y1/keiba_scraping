@@ -14,14 +14,21 @@
 </header>
 <main>
   <h2>URL入力</h2>
-  <span class="">
+  <div class="form_box">
     <form method="GET" action="/check_result">
       <input type="text" name="url" value="https://www.yahoo.co.jp">
       <input type="text" name="tag" placeholder="取得したいタグを入力">
       <input type="text" name="word" placeholder="取得したいワードを入力">
       <input type="submit" value="送信する">
     </form>
-  </span>
+  </div>
+  <h1>あAa1</h1>
+  <h2>あAa1</h2>
+  <h3>あAa1</h3>
+  <h4>あAa1</h4>
+  <h5>あAa1</h5>
+  <h6>あAa1</h6>
+  <p>あAa1</p>
 </main>
 </body>
 
