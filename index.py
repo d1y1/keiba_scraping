@@ -4,7 +4,13 @@
 from bottle import route, run, template, request
 from modules import *
 
-# localhost:8080
+
+@get('/static/css/<filename:re:.*\.less>')
+def css(filename):
+    return static_file(filename, root="static/css")
+
+
+# localhost:8080/check
 @route('/check')
 def title():
     # views/check.tplを呼ぶ
