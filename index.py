@@ -5,7 +5,7 @@ from bottle import route, run, template, request
 from modules import *
 
 
-@get('/static/css/<filename:re:.*\.less>')
+@route('/static/css/<filename:re:.*\.less>')
 def css(filename):
     return static_file(filename, root="static/css")
 
