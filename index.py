@@ -1,11 +1,11 @@
 #!/usr/local/bin/python
 # -*- coding: utf-8 -*-
 
-from bottle import route, run, template, request
+from bottle import route, run, template, request, static_file
 from modules import *
 
 
-@route('/static/css/<filename:re:.*\.less>')
+@route('/static/css/<filename>')
 def css(filename):
     return static_file(filename, root="static/css")
 
