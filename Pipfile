@@ -1,0 +1,18 @@
+[[source]]
+
+verify_ssl = true
+name = "pypi"
+url = "https://pypi.python.org/simple"
+
+
+[packages]
+
+scrapy = "*"
+requests = "*"
+"beautifulsoup4" = "*"
+lxml = "*"
+bottle = "*"
+
+
+[dev-packages]
+
